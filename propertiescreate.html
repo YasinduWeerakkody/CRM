@@ -205,13 +205,13 @@
                     <div class="col-md-6">
                         <div class="form-floating mb-3">
                             <input type="text" class="form-control" id="firstName" placeholder="First Name">
-                            <label for="firstName">First Name</label>
+                            <label for="firstName">customername</label>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-floating mb-3">
                             <input type="text" class="form-control" id="lastName" placeholder="Last Name">
-                            <label for="lastName">Last Name</label>
+                            <label for="lastName">propertycode</label>
                         </div>
                     </div>
 
@@ -219,34 +219,17 @@
                     <div class="col-md-6">
                         <div class="form-floating mb-3">
                             <input type="text" class="form-control" id="contactNumber" placeholder="Contact Number">
-                            <label for="contactNumber">Contact Number</label>
+                            <label for="contactNumber">propertylink</label>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-floating mb-3">
                             <input type="email" class="form-control" id="emailAddress" placeholder="Email Address">
-                            <label for="emailAddress">Email Address</label>
+                            <label for="emailAddress">phoneNo</label>
                         </div>
                     </div>
 
-                    <!-- Password and Profession -->
-                    <div class="col-md-6">
-                        <div class="form-floating mb-3">
-                            <input type="password" class="form-control" id="password" placeholder="Password">
-                            <label for="password">Password</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-floating mb-3">
-                            <select class="form-select" id="profession">
-                                <option selected>Select Profession</option>
-                                <option value="1">Doctor</option>
-                                <option value="2">Engineer</option>
-                                <option value="3">Businessman</option>
-                            </select>
-                            <label for="profession">Profession</label>
-                        </div>
-                    </div>
+                    
 
                     <!-- Property Type and Area -->
                     <div class="col-md-6">
@@ -257,6 +240,7 @@
                                 <option value="2">House</option>
                                 <option value="3">Apartment</option>
                                 <option value="4">Commercial Property</option>
+                                <option value="5">Villa</option>
                             </select>
                             <label for="propertyType">Property Type</label>
                         </div>
@@ -272,7 +256,7 @@
                     <div class="col-md-6">
                         <div class="form-floating mb-3">
                             <input type="text" class="form-control" id="purchaseCount" placeholder="No of Purchase">
-                            <label for="purchaseCount">No. of Purchase</label>
+                            <label for="purchaseCount">No. of Bedrooms</label>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -287,8 +271,7 @@
                         <div class="form-floating mb-3">
                             <select class="form-select" id="purpose">
                                 <option selected>Select Purpose</option>
-                                <option value="1">Living</option>
-                                <option value="2">Invest</option>
+                                <option value="1">sell</option>
                                 <option value="3">Rent</option>
                             </select>
                             <label for="purpose">Purpose</label>
@@ -297,13 +280,14 @@
                     <div class="col-md-6">
                         <div class="form-floating mb-3">
                             <select class="form-select" id="timeline">
-                                <option selected>Select Timeline</option>
-                                <option value="1">Within 1 month</option>
-                                <option value="2">Within 2 months</option>
-                                <option value="3">Within 2-6 months</option>
-                                <option value="4">More than 6 months</option>
+                                <option selected>Select Agent</option>
+                                <option value="1">rifaz</option>
+                                <option value="2">Ishane</option>
+                                <option value="3">Gimhani</option>
+                                <option value="4">Thakshala</option>
+                                <option value="5">Thamidu</option>
                             </select>
-                            <label for="timeline">How Soon?</label>
+                            <label for="timeline">Agent</label>
                         </div>
                     </div>
 
@@ -311,42 +295,13 @@
                     <div class="col-md-6">
                         <div class="form-floating mb-3">
                             <select class="form-select" id="transactionType">
-                                <option selected>Type</option>
-                                <option value="1">Cash Deal</option>
-                                <option value="2">Bank Loan</option>
-                                <option value="3">Both</option>
+                                <option selected>propertystatus</option>
+                                <option value="1">Completed</option>
+                                <option value="2">Ongoing</option>
+                                <option value="3">Upcoming</option>
                             </select>
-                            <label for="transactionType">Transaction Type</label>
+                            <label for="transactionType">propertystatus</label>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-floating mb-3">
-                            <select class="form-select" id="referral">
-                                <option selected>Select</option>
-                                <option value="1">Facebook</option>
-                                <option value="2">TikTok</option>
-                                <option value="3">YouTube</option>
-                                <option value="4">LinkedIn</option>
-                            </select>
-                            <label for="referral">How Did You Hear About Us?</label>
-                        </div>
-                    </div>
-
-                    <!-- Working with Other Agents -->
-                    <div class="col-md-12">
-                        <fieldset class="row mb-3">
-                            <legend class="col-form-label col-sm-6 pt-0">Are you working with other agents?</legend>
-                            <div class="col-sm-6">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="workingWithAgents" id="agentYes" value="yes">
-                                    <label class="form-check-label" for="agentYes">Yes</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="workingWithAgents" id="agentNo" value="no">
-                                    <label class="form-check-label" for="agentNo">No</label>
-                                </div>
-                            </div>
-                        </fieldset>
                     </div>
 
                     <!-- Special Notes -->
@@ -359,7 +314,7 @@
 
                 </div>
                 <div class="m-4">
-                    <button type="submit" class="btn btn-primary">Sign in</button>
+                    <button type="submit" class="btn btn-primary">Create Property</button>
                 </div>
             </div>
             
