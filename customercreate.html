@@ -63,31 +63,31 @@
                     <a href="index.html" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
                     <!-- Customer Page -->
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"><i class="far fa-file-alt me-2"></i>Custormer</a>
+                        <a href="#" class="nav-link dropdown-toggle " data-bs-toggle="dropdown"><i class="far fa-file-alt me-2"></i>Custormer</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="./customercreate.html" class="dropdown-item">customer create</a>
                             <a href="./customerview.html" class="dropdown-item">customer view</a>
                             <a href="./customeredit.html" class="dropdown-item">customer edit</a>
-                            <a href="blank.html" class="dropdown-item active">customer remove</a>
+                            <a href="./customerremove.html" class="dropdown-item active">customer remove</a>
                         </div>
                     </div>
                     <!-- Properties Page  -->
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"><i class="far fa-file-alt me-2"></i>Properties</a>
+                        <a href="#" class="nav-link dropdown-toggle " data-bs-toggle="dropdown"><i class="far fa-file-alt me-2"></i>Properties</a>
                         <div class="dropdown-menu bg-transparent border-0">
                             <a href="./propertiescreate.html" class="dropdown-item">Properties create</a>
                             <a href="./propertiesview.html" class="dropdown-item">Properties view</a>
                             <a href="./propertiesedit.html" class="dropdown-item">Properties edit</a>
-                            <a href="blank.html" class="dropdown-item active">Properties remove</a>
+                            <a href="./propertiesremove.html" class="dropdown-item active">Properties remove</a>
                         </div>
                     </div>
                     <!-- Users Page  -->
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"><i class="far fa-file-alt me-2"></i>Users</a>
+                        <a href="#" class="nav-link dropdown-toggle " data-bs-toggle="dropdown"><i class="far fa-file-alt me-2"></i>Users</a>
                         <div class="dropdown-menu bg-transparent border-0">
-                            <a href="signin.html" class="dropdown-item">Users create</a>
-                            <a href="signup.html" class="dropdown-item">Users view</a>
-                            <a href="404.html" class="dropdown-item">Users edit</a>
+                            <a href="./userscreate.html" class="dropdown-item">Users create</a>
+                            <a href="./usersview.html" class="dropdown-item">Users view</a>
+                            <a href="./usersEdit.html" class="dropdown-item">Users edit</a>
                             <a href="blank.html" class="dropdown-item ">Users remove Disable</a>
                             <a href="blank.html" class="dropdown-item ">Users notifications</a>
                             <a href="blank.html" class="dropdown-item ">Users password reset</a>
@@ -204,131 +204,131 @@
                     <!-- First Name and Last Name -->
                     <div class="col-md-6">
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="firstName" placeholder="First Name">
-                            <label for="firstName">First Name</label>
+                            <input type="text" class="form-control" id="cus_first_name" placeholder="cus_first_name">
+                            <label for="cus_first_name">First Name</label>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="lastName" placeholder="Last Name">
-                            <label for="lastName">Last Name</label>
+                            <input type="text" class="form-control" id="cus_last_name" placeholder="cus_last_name">
+                            <label for="cus_last_name">Last Name</label>
                         </div>
                     </div>
 
                     <!-- Contact Number and Email -->
                     <div class="col-md-6">
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="contactNumber" placeholder="Contact Number">
-                            <label for="contactNumber">Contact Number</label>
+                            <input type="text" class="form-control" id="cus_contact_num" placeholder="cus_contact_num">
+                            <label for="cus_contact_num">Contact Number</label>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <!-- <div class="col-md-6">
                         <div class="form-floating mb-3">
                             <input type="email" class="form-control" id="emailAddress" placeholder="Email Address">
                             <label for="emailAddress">Email Address</label>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- Password and Profession -->
-                    <div class="col-md-6">
+                    <!-- <div class="col-md-6">
                         <div class="form-floating mb-3">
                             <input type="password" class="form-control" id="password" placeholder="Password">
                             <label for="password">Password</label>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="col-md-6">
                         <div class="form-floating mb-3">
-                            <select class="form-select" id="profession">
+                            <select class="form-select" id="prof_id">
                                 <option selected>Select Profession</option>
                                 <option value="1">Doctor</option>
                                 <option value="2">Engineer</option>
                                 <option value="3">Businessman</option>
                             </select>
-                            <label for="profession">Profession</label>
+                            <label for="prof_id">Profession</label>
                         </div>
                     </div>
 
                     <!-- Property Type and Area -->
                     <div class="col-md-6">
                         <div class="form-floating mb-3">
-                            <select class="form-select" id="propertyType">
+                            <select class="form-select" id="proptyp_id">
                                 <option selected>Select Property Type</option>
                                 <option value="1">Land</option>
                                 <option value="2">House</option>
                                 <option value="3">Apartment</option>
                                 <option value="4">Commercial Property</option>
                             </select>
-                            <label for="propertyType">Property Type</label>
+                            <label for="proptyp_id">Property Type</label>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="propertyArea" placeholder="Property Area">
-                            <label for="propertyArea">Property Area</label>
+                            <input type="text" class="form-control" id="cus_area_location" placeholder="cus_area_location">
+                            <label for="cus_area_location">Property Area</label>
                         </div>
                     </div>
 
                     <!-- No. of Purchase and Floor Area -->
                     <div class="col-md-6">
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="purchaseCount" placeholder="No of Purchase">
-                            <label for="purchaseCount">No. of Purchase</label>
+                            <input type="text" class="form-control" id="cus_area_sqft_perchases" placeholder="cus_area_sqft_perchases">
+                            <label for="cus_area_sqft_perchases">No. of Purchase</label>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floorArea" placeholder="Floor Area (sqft)">
-                            <label for="floorArea">Floor Area (sqft)</label>
+                            <input type="text" class="form-control" id="cus_area_sqft_value" placeholder="Floor Area (sqft)">
+                            <label for="cus_area_sqft_value">Floor Area (sqft)</label>
                         </div>
                     </div>
 
                     <!-- Purpose and Timeline -->
                     <div class="col-md-6">
                         <div class="form-floating mb-3">
-                            <select class="form-select" id="purpose">
+                            <select class="form-select" id="c_prps_id">
                                 <option selected>Select Purpose</option>
                                 <option value="1">Living</option>
                                 <option value="2">Invest</option>
                                 <option value="3">Rent</option>
                             </select>
-                            <label for="purpose">Purpose</label>
+                            <label for="c_prps_id">Purpose</label>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-floating mb-3">
-                            <select class="form-select" id="timeline">
+                            <select class="form-select" id="tmelne_id">
                                 <option selected>Select Timeline</option>
                                 <option value="1">Within 1 month</option>
                                 <option value="2">Within 2 months</option>
                                 <option value="3">Within 2-6 months</option>
                                 <option value="4">More than 6 months</option>
                             </select>
-                            <label for="timeline">How Soon?</label>
+                            <label for="tmelne_id">How Soon?</label>
                         </div>
                     </div>
 
                     <!-- Transaction Type and Referral -->
                     <div class="col-md-6">
                         <div class="form-floating mb-3">
-                            <select class="form-select" id="transactionType">
+                            <select class="form-select" id="trtyp_id">
                                 <option selected>Type</option>
                                 <option value="1">Cash Deal</option>
                                 <option value="2">Bank Loan</option>
                                 <option value="3">Both</option>
                             </select>
-                            <label for="transactionType">Transaction Type</label>
+                            <label for="trtyp_id">Transaction Type</label>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-floating mb-3">
-                            <select class="form-select" id="referral">
+                            <select class="form-select" id="hau_id">
                                 <option selected>Select</option>
                                 <option value="1">Facebook</option>
                                 <option value="2">TikTok</option>
                                 <option value="3">YouTube</option>
                                 <option value="4">LinkedIn</option>
                             </select>
-                            <label for="referral">How Did You Hear About Us?</label>
+                            <label for="hau_id">How Did You Hear About Us?</label>
                         </div>
                     </div>
 
@@ -338,22 +338,30 @@
                             <legend class="col-form-label col-sm-6 pt-0">Are you working with other agents?</legend>
                             <div class="col-sm-6">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="workingWithAgents" id="agentYes" value="yes">
+                                    <input class="form-check-input" type="radio" name="cus_other_agents" id="agentYes" value="yes">
                                     <label class="form-check-label" for="agentYes">Yes</label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="workingWithAgents" id="agentNo" value="no">
+                                    <input class="form-check-input" type="radio" name="cus_other_agents" id="agentNo" value="no">
                                     <label class="form-check-label" for="agentNo">No</label>
                                 </div>
                             </div>
                         </fieldset>
                     </div>
 
+                    <div class="col-md-6">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch"
+                                id="cus_active_status">
+                            <label class="form-check-label" for="cus_active_status">Customer active status</label>
+                        </div>
+                    </div>
+
                     <!-- Special Notes -->
                     <div class="col-md-12">
                         <div class="form-floating">
-                            <textarea class="form-control" id="specialNotes" placeholder="Leave a comment here" style="height: 150px;"></textarea>
-                            <label for="specialNotes">Special Notes</label>
+                            <textarea class="form-control" id="cus_remarks" placeholder="Leave a comment here" style="height: 150px;"></textarea>
+                            <label for="cus_remarks">Special Notes</label>
                         </div>
                     </div>
 
