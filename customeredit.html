@@ -61,6 +61,19 @@
                 
                 <div class="navbar-nav w-100">
                     <a href="index.html" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
+                    <!-- <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>Elements</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a href="button.html" class="dropdown-item">Buttons</a>
+                            <a href="typography.html" class="dropdown-item">Typography</a>
+                            <a href="element.html" class="dropdown-item">Other Elements</a>
+                        </div>
+                    </div> -->
+                    <!-- <a href="widget.html" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Widgets</a>
+                    <a href="form.html" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Forms</a>
+                    <a href="table.html" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Tables</a>
+                    <a href="chart.html" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Charts</a> -->
+                    
                     <!-- Customer Page -->
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle " data-bs-toggle="dropdown"><i class="far fa-file-alt me-2"></i>Custormer</a>
@@ -111,11 +124,11 @@
                 <a href="#" class="sidebar-toggler flex-shrink-0">
                     <i class="fa fa-bars"></i>
                 </a>
-                <form class="d-none d-md-flex ms-4">
+                <!-- <form class="d-none d-md-flex ms-4">
                     <input class="form-control border-0" type="search" placeholder="Search">
-                </form>
+                </form> -->
                 <div class="navbar-nav align-items-center ms-auto">
-                    <div class="nav-item dropdown">
+                    <!-- <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             <i class="fa fa-envelope me-lg-2"></i>
                             <span class="d-none d-lg-inline-flex">Message</span>
@@ -153,7 +166,7 @@
                             <hr class="dropdown-divider">
                             <a href="#" class="dropdown-item text-center">See all message</a>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             <i class="fa fa-bell me-lg-2"></i>
@@ -193,192 +206,103 @@
             </nav>
             <!-- Navbar End -->
 
-
-            <!-- Form Start -->
-<div class="container-fluid pt-4 px-4">
-    <div class="row g-4">
-        <div class="col-sm-12 col-xl-12">
-            <div class="bg-light rounded h-100 p-4">
-                <h6 class="mb-4">Floating Label Form</h6>
-                <div class="row">
-                    <!-- First Name and Last Name -->
-                    <div class="col-md-6">
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="cus_first_name" placeholder="cus_first_name">
-                            <label for="cus_first_name">First Name</label>
-                        </div>
+            <!-- Recent Sales Start -->
+            <div class="container-fluid pt-4 px-4 col-12">
+                <div class="bg-light text-center rounded p-4">
+                    <div class="d-flex align-items-center justify-content-between mb-4">
+                        <h6 class="mb-0">Recent Customers</h6>
+                        <form class="d-none d-md-flex ms-4">
+                            <input class="form-control border-0" type="search" placeholder="Search">
+                        </form>
+                        <a href="">Show All</a>
                     </div>
-                    <div class="col-md-6">
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="cus_last_name" placeholder="cus_last_name">
-                            <label for="cus_last_name">Last Name</label>
-                        </div>
+                    <div class="table-responsive">
+                        <table class="table text-start align-middle table-hover mb-0">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First Name</th>
+                                    <th scope="col">Last Name</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Country</th>
+                                    <th scope="col">ZIP</th>
+                                    <th scope="col">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>John</td>
+                                    <td>Doe</td>
+                                    <td>jhon@email.com</td>
+                                    <td>USA</td>
+                                    <td>123</td>
+                                    <td>
+                                        <div class="d-flex mb-2">
+                                            <a href="./customereditView.html"> <button type="button" class="btn btn-primary ms-2">edit</button></a>
+                                        </div>
+                                    </td>                                    
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>mark@email.com</td>
+                                    <td>UK</td>
+                                    <td>456</td>
+                                    <td>
+                                        <div class="d-flex mb-2">
+                                            <a href="./customereditView.html" > <button type="button" class="btn btn-primary ms-2">edit</button></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>jacob@email.com</td>
+                                    <td>AU</td>
+                                    <td>789</td>
+                                    <td>
+                                        <div class="d-flex mb-2">
+                                            <a href="./customereditView.html"> <button type="button" class="btn btn-primary ms-2">edit</button></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>mark@email.com</td>
+                                    <td>UK</td>
+                                    <td>456</td>
+                                    <td>
+                                        <div class="d-flex mb-3">
+                                            <a href="./customereditView.html"> <button type="button" class="btn btn-primary ms-2">edit</button></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>jacob@email.com</td>
+                                    <td>AU</td>
+                                    <td>789</td>
+                                    <td>
+                                        <div class="d-flex mb-3">
+                                            <a href="./customereditView.html"> <button type="button" class="btn btn-primary ms-2">edit</button></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-
-                    <!-- Contact Number and Email -->
-                    <div class="col-md-6">
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="cus_contact_num" placeholder="cus_contact_num">
-                            <label for="cus_contact_num">Contact Number</label>
-                        </div>
-                    </div>
-                    <!-- <div class="col-md-6">
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="emailAddress" placeholder="Email Address">
-                            <label for="emailAddress">Email Address</label>
-                        </div>
-                    </div> -->
-
-                    <!-- Password and Profession -->
-                    <!-- <div class="col-md-6">
-                        <div class="form-floating mb-3">
-                            <input type="password" class="form-control" id="password" placeholder="Password">
-                            <label for="password">Password</label>
-                        </div>
-                    </div> -->
-                    <div class="col-md-6">
-                        <div class="form-floating mb-3">
-                            <select class="form-select" id="prof_id">
-                                <option selected>Select Profession</option>
-                                <option value="1">Doctor</option>
-                                <option value="2">Engineer</option>
-                                <option value="3">Businessman</option>
-                            </select>
-                            <label for="prof_id">Profession</label>
-                        </div>
-                    </div>
-
-                    <!-- Property Type and Area -->
-                    <div class="col-md-6">
-                        <div class="form-floating mb-3">
-                            <select class="form-select" id="proptyp_id">
-                                <option selected>Select Property Type</option>
-                                <option value="1">Land</option>
-                                <option value="2">House</option>
-                                <option value="3">Apartment</option>
-                                <option value="4">Commercial Property</option>
-                            </select>
-                            <label for="proptyp_id">Property Type</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="cus_area_location" placeholder="cus_area_location">
-                            <label for="cus_area_location">Property Area</label>
-                        </div>
-                    </div>
-
-                    <!-- No. of Purchase and Floor Area -->
-                    <div class="col-md-6">
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="cus_area_sqft_perchases" placeholder="cus_area_sqft_perchases">
-                            <label for="cus_area_sqft_perchases">No. of Purchase</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="cus_area_sqft_value" placeholder="Floor Area (sqft)">
-                            <label for="cus_area_sqft_value">Floor Area (sqft)</label>
-                        </div>
-                    </div>
-
-                    <!-- Purpose and Timeline -->
-                    <div class="col-md-6">
-                        <div class="form-floating mb-3">
-                            <select class="form-select" id="c_prps_id">
-                                <option selected>Select Purpose</option>
-                                <option value="1">Living</option>
-                                <option value="2">Invest</option>
-                                <option value="3">Rent</option>
-                            </select>
-                            <label for="c_prps_id">Purpose</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-floating mb-3">
-                            <select class="form-select" id="tmelne_id">
-                                <option selected>Select Timeline</option>
-                                <option value="1">Within 1 month</option>
-                                <option value="2">Within 2 months</option>
-                                <option value="3">Within 2-6 months</option>
-                                <option value="4">More than 6 months</option>
-                            </select>
-                            <label for="tmelne_id">How Soon?</label>
-                        </div>
-                    </div>
-
-                    <!-- Transaction Type and Referral -->
-                    <div class="col-md-6">
-                        <div class="form-floating mb-3">
-                            <select class="form-select" id="trtyp_id">
-                                <option selected>Type</option>
-                                <option value="1">Cash Deal</option>
-                                <option value="2">Bank Loan</option>
-                                <option value="3">Both</option>
-                            </select>
-                            <label for="trtyp_id">Transaction Type</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-floating mb-3">
-                            <select class="form-select" id="hau_id">
-                                <option selected>Select</option>
-                                <option value="1">Facebook</option>
-                                <option value="2">TikTok</option>
-                                <option value="3">YouTube</option>
-                                <option value="4">LinkedIn</option>
-                            </select>
-                            <label for="hau_id">How Did You Hear About Us?</label>
-                        </div>
-                    </div>
-
-                    <!-- Working with Other Agents -->
-                    <div class="col-md-12">
-                        <fieldset class="row mb-3">
-                            <legend class="col-form-label col-sm-6 pt-0">Are you working with other agents?</legend>
-                            <div class="col-sm-6">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="cus_other_agents" id="agentYes" value="yes">
-                                    <label class="form-check-label" for="agentYes">Yes</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="cus_other_agents" id="agentNo" value="no">
-                                    <label class="form-check-label" for="agentNo">No</label>
-                                </div>
-                            </div>
-                        </fieldset>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" role="switch"
-                                id="cus_active_status">
-                            <label class="form-check-label" for="cus_active_status">Customer active status</label>
-                        </div>
-                    </div>
-
-                    <!-- Special Notes -->
-                    <div class="col-md-12">
-                        <div class="form-floating">
-                            <textarea class="form-control" id="cus_remarks" placeholder="Leave a comment here" style="height: 150px;"></textarea>
-                            <label for="cus_remarks">Special Notes</label>
-                        </div>
-                    </div>
-
                 </div>
-                <div class="m-4">
-                    <button type="submit" class="btn btn-primary">Edit Customer</button>
-                </div>
+                
             </div>
-            
-        </div>
-        
-    </div>
-    
-</div>
-<!-- Form End -->
-
-
+            <!-- Recent Sales End -->
+           
 
             <!-- Footer Start -->
             <div class="container-fluid pt-4 px-4">
@@ -389,7 +313,7 @@
                         </div>
                         <div class="col-12 col-sm-6 text-center text-sm-end">
                             <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                            Designed By <a href="https://htmlcodex.com">Lavinia IT dep</a>
+                            Designed By <a href="https://htmlcodex.com">Lavinia IT Dep</a>
                         </div>
                     </div>
                 </div>
@@ -416,6 +340,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    
 </body>
 
 </html>
